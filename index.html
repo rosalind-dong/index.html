@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My First GitHub Pages Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1>Rosalind’s Mini Webpage</h1>
+      <p class="subtitle">
+        HTML/CSS Exercise 1 — published with GitHub Pages
+      </p>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#elements">XHTML elements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="about" class="card">
+        <h2>About this page</h2>
+        <p>
+          This page demonstrates basic <strong>XHTML-style</strong> markup (self-closing tags,
+          properly nested elements) and <em>CSS styling</em>.
+        </p>
+
+        <figure class="figure">
+          <img
+            src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&amp;fit=crop&amp;w=1200&amp;q=60"
+            alt="A laptop with code on the screen"
+          />
+          <figcaption>
+            A simple image + caption using <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code>.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="elements" class="card">
+        <h2>Element showcase</h2>
+
+        <div class="grid">
+          <article class="panel">
+            <h3>Lists</h3>
+            <p>Unordered list:</p>
+            <ul>
+              <li>HTML structure</li>
+              <li>CSS layout</li>
+              <li>GitHub Pages</li>
+            </ul>
+
+            <p>Ordered list:</p>
+            <ol>
+              <li>Create files</li>
+              <li>Push to GitHub</li>
+              <li>Enable Pages</li>
+            </ol>
+          </article>
+
+          <article class="panel">
+            <h3>Table</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">Used?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sections &amp; headings</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Image + caption</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Grid layout</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="panel">
+            <h3>Quote + code</h3>
+            <blockquote>
+              “The web is the most powerful communication medium ever invented.”
+              <span class="quote-author">— (attributed)</span>
+            </blockquote>
+
+            <p>Inline code:</p>
+            <p class="code-line">
+              Use <code>index.html</code> as the homepage file.
+            </p>
+          </article>
+        </div>
+
+        <details class="details">
+          <summary>Click to reveal a small note</summary>
+          <p>
+            This uses <code>&lt;details&gt;</code> / <code>&lt;summary&gt;</code>.
+            It’s an easy way to show interactivity without JavaScript.
+          </p>
+        </details>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact form (demo)</h2>
+        <p class="hint">
+          This form doesn’t submit anywhere (no backend), but it demonstrates form elements.
+        </p>
+
+        <form action="#" method="get" class="form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+
+          <label>
+            Topic
+            <select name="topic">
+              <option value="class">Class</option>
+              <option value="github">GitHub Pages</option>
+              <option value="css">CSS styling</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Say hi..."></textarea>
+          </label>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Made for HTML/CSS Exercise 1 ·
+        <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>
+      </p>
+    </footer>
+  </body>
+</html>
+
