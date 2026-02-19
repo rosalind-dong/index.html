@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exercise 2 — Structural HTML</title>
+    <link rel="stylesheet" href="exercise2.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="brand">
+        <h1>Exercise 2: Structure First</h1>
+        <p class="subtitle">
+          Practicing semantic/structural elements in HTML + CSS
+        </p>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#reading">Reading Notes</a></li>
+          <li><a href="#layout">Layout Demo</a></li>
+          <li><a href="#credits">Credits</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content" class="container">
+      <section id="overview" class="card">
+        <header class="section-header">
+          <h2>Overview</h2>
+        </header>
+
+        <p>
+          This page expands Exercise 1 by focusing on <strong>structural HTML</strong>:
+          <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+          <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>,
+          and <code>&lt;footer&gt;</code>.
+        </p>
+
+        <p>
+          The goal is to make the page readable not only visually, but also structurally
+          (for browsers, screen readers, and future maintainers).
+        </p>
+      </section>
+
+      <section id="reading" class="card">
+        <header class="section-header">
+          <h2>Reading Notes (example content)</h2>
+        </header>
+
+        <div class="two-col">
+          <article class="panel">
+            <h3>Article</h3>
+            <p>
+              An <code>&lt;article&gt;</code> is a self-contained piece of content that could
+              stand alone (like a blog post, news item, or entry).
+            </p>
+            <ul>
+              <li>Clear heading</li>
+              <li>Independent meaning</li>
+              <li>Reusable outside the page</li>
+            </ul>
+          </article>
+
+          <aside class="panel aside">
+            <h3>Aside</h3>
+            <p>
+              An <code>&lt;aside&gt;</code> holds related but non-essential material—like a sidebar,
+              definition, or quick context note.
+            </p>
+            <p class="tip">
+              Tip: Using <code>aside</code> makes your layout and meaning clearer than using only
+              <code>div</code>.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="layout" class="card">
+        <header class="section-header">
+          <h2>Layout Demo</h2>
+        </header>
+
+        <article class="panel">
+          <h3>Figure + Caption</h3>
+          <figure class="figure">
+            <img
+              src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&amp;fit=crop&amp;w=1200&amp;q=60"
+              alt="Notebook and laptop on a desk"
+            />
+            <figcaption>
+              A <code>&lt;figure&gt;</code> with <code>&lt;figcaption&gt;</code> inside an
+              <code>&lt;article&gt;</code>.
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="panel">
+          <h3>Definition List</h3>
+          <dl class="dl">
+            <dt>Semantic HTML</dt>
+            <dd>HTML tags that describe meaning/structure, not just appearance.</dd>
+            <dt>Structural elements</dt>
+            <dd>Elements like header/nav/main/section/article/aside/footer.</dd>
+            <dt>CSS</dt>
+            <dd>Styling rules that control layout, spacing, typography, and color.</dd>
+          </dl>
+        </article>
+      </section>
+    </main>
+
+    <footer id="credits" class="site-footer">
+      <p>
+        Exercise 2 webpage · Built with semantic HTML + CSS ·
+        <a href="./index.html">Back to Exercise 1</a>
+      </p>
+    </footer>
+  </body>
+</html>
 
